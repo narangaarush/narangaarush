@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+
+  <defs>
+    <!-- Gradient text -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cfcfcf"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+      <animate attributeName="x1" values="0%;100%;0%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;200%;100%" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Soft glow -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- Centered group -->
+  <g transform="translate(450 110)" text-anchor="middle">
+
+    <!-- Pulsing effect -->
+    <g filter="url(#glow)">
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1;1.04;1"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+      
+      <text
+        font-size="48"
+        font-weight="700"
+        font-family="Inter, Segoe UI, Arial, sans-serif"
+        fill="url(#grad)">
+        New Projects Coming Soon
+      </text>
+    </g>
+
+  </g>
+
+</svg>
