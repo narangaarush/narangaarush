@@ -1,6 +1,10 @@
 <h1 align="center">Aarush Narang</h1>
 
 <p align="center">
+  <img src="./assets/spin-a-3d.svg" width="200" />
+</p>
+
+<p align="center">
   <b>GenAI Software Engineer</b> • RAG/Copilots • React/Tailwind • Python/Go
 </p>
 
