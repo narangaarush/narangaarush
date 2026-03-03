@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="10" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(120 120)" filter="url(#shadow)">
+    <g>
+
+      <!-- FAST vertical 3D flip -->
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1 1;0.05 1;1 1;-0.05 1;1 1"
+        keyTimes="0;0.25;0.5;0.75;1"
+        dur="0.9s"
+        repeatCount="indefinite"/>
+
+      <!-- Cyan glitch -->
+      <text x="0" y="50"
+            text-anchor="middle"
+            font-size="150"
+            font-weight="900"
+            font-family="Arial, Helvetica, sans-serif"
+            fill="#00f5ff"
+            transform="translate(5 -4)">
+        A
+      </text>
+
+      <!-- Red glitch -->
+      <text x="0" y="50"
+            text-anchor="middle"
+            font-size="150"
+            font-weight="900"
+            font-family="Arial, Helvetica, sans-serif"
+            fill="#ff0040"
+            transform="translate(-5 4)">
+        A
+      </text>
+
+      <!-- Main A -->
+      <text x="0" y="50"
+            text-anchor="middle"
+            font-size="150"
+            font-weight="900"
+            font-family="Arial, Helvetica, sans-serif"
+            fill="#0b0b0f">
+        A
+      </text>
+
+    </g>
+  </g>
+</svg>
