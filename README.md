@@ -1,7 +1,7 @@
 <h1 align="center">Aarush Narang</h1>
 
 <p align="center">
-  <img src="./assets/spin-a-3d.svg" width="200" />
+  <img src="logo.svg" width="200" />
 </p>
 
 <p align="center">
